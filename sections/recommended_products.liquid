@@ -8,20 +8,20 @@
                             
                         </li>
 {% endfor %}</ul></div></div></div><div class="hide w-embed w-script"><script>document.addEventListener('DOMContentLoaded', function() {
-    const productRecommendationsSection = document.querySelector('.product-recommendations');
-    const url = productRecommendationsSection.dataset.url;
-    fetch(url)
-      .then(response => response.text())
-      .then(text => {
-      const html = document.createElement('div');
-      html.innerHTML = text;
-      const recommendations = html.querySelector('.product-recommendations');
-      if (recommendations && recommendations.innerHTML.trim().length) {
-        productRecommendationsSection.innerHTML = recommendations.innerHTML;
-      }
-    })
-      .catch(e => {
-      console.error(e);
-    });
-  });
-</script></div> {% schema %} {"tag":"section","name":"Recommended Products","class":"section_product-recommended","settings":[{"id":"text_heading","type":"text","label":"Heading","default":"Recommended"}],"presets":[{"name":"Recommended Products","category":"Liquify","blocks":[]}],"enabled_on":{"templates":["product"]}} {% endschema %}
+                const productRecommendationsSection = document.querySelector('.product-recommendations');
+                const url = productRecommendationsSection.dataset.url;
+                fetch(url)
+                  .then(response => response.text())
+                  .then(text => {
+                    const html = document.createElement('div');
+                    html.innerHTML = text;
+                    const recommendations = html.querySelector('.product-recommendations');
+                    if (recommendations && recommendations.innerHTML.trim().length) {
+                      productRecommendationsSection.innerHTML = recommendations.innerHTML;
+                    }
+                  })
+                  .catch(e => {
+                    console.error(e);
+                  });
+              });
+            </script></div> {% schema %} {"tag":"section","name":"Recommended Products","class":"section_product-recommended","settings":[{"id":"text_heading","type":"text","label":"Heading","default":"Recommended"}],"presets":[{"name":"Recommended Products","category":"Liquify","blocks":[]}],"enabled_on":{"templates":["product"]}} {% endschema %}

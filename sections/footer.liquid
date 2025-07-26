@@ -76,21 +76,20 @@
 </div><input type="hidden" name="language_code" class="li-lang_hidden-input" value="{{ localization.language.iso_code }}">
 {% endform %}
 <div class="li-lang_script w-embed w-script"><script>class LocalizationForm extends HTMLElement {
-  constructor() {
-    super();
-    this.input = this.querySelector('input[name="language_code"], input[name="country_code"]');
-    this.querySelectorAll('a').forEach(item =>
-      item.addEventListener('click', this.onItemClick.bind(this))
-    );
-  }
-  onItemClick(event) {
-    event.preventDefault();
-    const form = this.querySelector('form');
-    this.input.value = event.currentTarget.dataset.value;
-    if (form) form.submit();
-  }
-}
-customElements.define('localization-form', LocalizationForm);
-</script></div>    </localization-form>
-{% endif %}</div></div></div><div class="li-custom w-embed"></div>
- {% schema %} {"tag":"footer","name":"footer","class":"section_footer","blocks":[{"name":"Shipping","type":"shipping","settings":[{"id":"image_icon","type":"image_picker","label":"Icon"}]},{"name":"Social-Media","type":"social-media","settings":[{"id":"url_link","type":"url","label":"Link"},{"id":"image_icon","type":"image_picker","label":"Icon"}]}],"settings":[{"id":"text_heading","type":"text","label":"Heading","default":"Signup for Newsletter"},{"id":"text_checkbox","type":"text","label":"Checkbox","default":"By subscribing you agree to with our <a href=\"#\"><span>Privacy Policy<\/span><\/a> and provide consent to receive updates from our company."},{"id":"text_delivery","type":"text","label":"Delivery","default":"Delivery"},{"id":"text_payment_method","type":"text","label":"Payment Method","default":"Payment Method"},{"id":"text_social_media","type":"text","label":"Social Media","default":"Social Media"},{"id":"image_logo","type":"image_picker","label":"Logo"},{"type":"header","content":"Navigation"},{"type":"link_list","id":"menu","label":"Footer Menu","default":"footer"}],"presets":[{"name":"footer","category":"Liquify","blocks":[{"type":"shipping"},{"type":"social-media"}]}],"enabled_on":{"groups":["*"]}} {% endschema %}
+                        constructor() {
+                          super();
+                          this.input = this.querySelector('input[name="language_code"], input[name="country_code"]');
+                          this.querySelectorAll('a').forEach(item =>
+                            item.addEventListener('click', this.onItemClick.bind(this))
+                          );
+                        }
+                        onItemClick(event) {
+                          event.preventDefault();
+                          const form = this.querySelector('form');
+                          this.input.value = event.currentTarget.dataset.value;
+                          if (form) form.submit();
+                        }
+                      }
+                      customElements.define('localization-form', LocalizationForm);
+                    </script></div>    </localization-form>
+{% endif %}</div></div></div> {% schema %} {"tag":"footer","name":"footer","class":"section_footer","blocks":[{"name":"Shipping","type":"shipping","settings":[{"id":"image_icon","type":"image_picker","label":"Icon"}]},{"name":"Social-Media","type":"social-media","settings":[{"id":"url_link","type":"url","label":"Link"},{"id":"image_icon","type":"image_picker","label":"Icon"}]}],"settings":[{"id":"text_heading","type":"text","label":"Heading","default":"Signup for Newsletter"},{"id":"text_checkbox","type":"text","label":"Checkbox","default":"By subscribing you agree to with our <a href=\"#\"><span>Privacy Policy<\/span><\/a> and provide consent to receive updates from our company."},{"id":"text_delivery","type":"text","label":"Delivery","default":"Delivery"},{"id":"text_payment_method","type":"text","label":"Payment Method","default":"Payment Method"},{"id":"text_social_media","type":"text","label":"Social Media","default":"Social Media"},{"id":"image_logo","type":"image_picker","label":"Logo"},{"type":"header","content":"Navigation"},{"type":"link_list","id":"menu","label":"Footer Menu","default":"footer"}],"presets":[{"name":"footer","category":"Liquify","blocks":[{"type":"shipping"},{"type":"social-media"}]}],"enabled_on":{"groups":["*"]}} {% endschema %}
