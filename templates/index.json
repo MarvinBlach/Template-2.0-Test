@@ -62,6 +62,36 @@
         "url_button_link": "shopify://products/example-pants",
         "image_image": "shopify://shop_images/kids-beanie.jpg"
       }
+    },
+    "gym_FGqA7m": {
+      "type": "gym",
+      "blocks": {
+        "categories_fgfx7K": {
+          "type": "categories",
+          "settings": {
+            "url_block_link": "shopify://collections/frontpage",
+            "text_block_text": "Bestseller"
+          }
+        },
+        "categories_G9qUbV": {
+          "type": "categories",
+          "settings": {
+            "url_block_link": "shopify://products/example-pants",
+            "text_block_text": "Men"
+          }
+        }
+      },
+      "block_order": [
+        "categories_fgfx7K",
+        "categories_G9qUbV"
+      ],
+      "name": "Gym",
+      "settings": {
+        "image_image": "shopify://shop_images/generate-me-a-image-with-people-making-sports-and-it-shuld-be-very-light-bright-so-it-works-on-black-text.png",
+        "text_heading_top": "Black Friday",
+        "text_heading_bottom": "25% Extra Discount with Code Extra25",
+        "text_disclaimer": "Only for woman clothes"
+      }
     }
   },
   "layout": "theme",
@@ -72,6 +102,7 @@
     "featured_collections",
     "blog_posts",
     "custom_liquid",
-    "tester_i47cUe"
+    "tester_i47cUe",
+    "gym_FGqA7m"
   ]
 }
