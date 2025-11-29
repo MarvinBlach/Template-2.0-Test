@@ -1,0 +1,167 @@
+<style>
+  .text-size-medium.text-weight-semibold.is-underlined {
+    text-decoration: underline;
+    text-decoration-color: hsla(114.6268656716418, 74.76%, 22.89%, 1.00);
+    text-underline-position: under;
+  }
+  .max-width-small {
+    width: 100%;
+    max-width: 20rem;
+  }
+  .gym_content-holder-links {
+    display: flex;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+  .container-large {
+    width: 100%;
+    max-width: 85rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .text-size-regular {
+    font-size: 1rem;
+  }
+  .gym_content {
+    position: relative;
+  }
+  .gym_content-holder {
+    position: absolute;
+    left: 2rem;
+    top: 0%;
+    right: 0%;
+    bottom: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+  .text-size-medium {
+    font-size: 1.25rem;
+  }
+  .padding-global {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+  @media screen and (max-width: 767px) {
+    .padding-global {
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+    }
+  }
+  .heading-style-h3 {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  @media screen and (max-width: 767px) {
+    .heading-style-h3 {
+      font-size: 1.5rem;
+    }
+  }
+  .gym_content-img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 2.39/1;
+  }
+</style>
+  <div class="padding-global padding-section-large">
+    <div class="container-large">
+      <div class="gym_content">
+        {% if section.settings.image_image %}
+{{ section.settings.image_image | image_url: width: 1000 | image_tag: class: 'gym_content-img', alt: 'inherit', loading: 'lazy' }}
+{% else %}
+<img class="gym_content-img" alt="inherit" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy">
+{% endif %}
+        <div class="gym_content-holder">
+          <div class="max-width-small">
+            <h1 class="heading-style-h3">
+{{ section.settings.text_heading_top }}
+</h1>
+            <h1 class="heading-style-h3 text-color-green">
+{{ section.settings.text_heading_bottom }}
+</h1>
+          </div>
+          <p class="text-size-regular">
+{{ section.settings.text_disclaimer }}
+</p>
+          <div class="gym_content-holder-links">
+            {% for block in section.blocks %}
+    {% if block.type == "categories" %}
+                    <div class="gym_content-holder-item" li-block="Categories">
+                                    
+              
+                                    <a href="{{ block.settings.url_block_link }}"> <div class="text-size-medium text-weight-semibold is-underlined">{{ block.settings.text_block_text }}</div> </a>
+                                    
+            
+                            </div>
+            {% endif %}
+{% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> {% schema %} {
+    "tag": "section",
+    "name": "Gym",
+    "class": "section_gym",
+    "blocks": [
+        {
+            "name": "Categories",
+            "type": "categories",
+            "settings": [
+                {
+                    "id": "url_block_link",
+                    "type": "url",
+                    "label": "Block Link"
+                },
+                {
+                    "id": "text_block_text",
+                    "type": "text",
+                    "label": "Block Text",
+                    "default": "\n                    Category\n                "
+                }
+            ]
+        }
+    ],
+    "settings": [
+        {
+            "id": "image_image",
+            "type": "image_picker",
+            "label": "Image"
+        },
+        {
+            "id": "text_heading_top",
+            "type": "text",
+            "label": "Heading Top",
+            "default": "\n                Heading\n            "
+        },
+        {
+            "id": "text_heading_bottom",
+            "type": "text",
+            "label": "Heading Bottom",
+            "default": "\n                Heading\n            "
+        },
+        {
+            "id": "text_disclaimer",
+            "type": "text",
+            "label": "Disclaimer",
+            "default": "\n              Some Dislaimer\n          "
+        }
+    ],
+    "presets": [
+        {
+            "name": "Gym",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "categories"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
