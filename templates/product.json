@@ -41,12 +41,31 @@
       "settings": {
         "text_heading": "Recommended"
       }
+    },
+    "1770387803e93d9bdb": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_AN7zc6": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_AN7zc6"
+      ],
+      "settings": {}
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "product_hero",
-    "recommended_products"
+    "recommended_products",
+    "1770387803e93d9bdb"
   ]
 }
