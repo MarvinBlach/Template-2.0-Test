@@ -41,12 +41,40 @@
       "settings": {
         "text_heading": "Recommended"
       }
+    },
+    "flexi_nC8g64": {
+      "type": "flexi",
+      "blocks": {
+        "heading_6MehDh": {
+          "type": "heading",
+          "settings": {
+            "text_heading": "Our Reviews"
+          },
+          "blocks": {}
+        },
+        "judge_me_reviews_review_widget_fegRY8": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6MehDh",
+        "judge_me_reviews_review_widget_fegRY8"
+      ],
+      "name": "Flexi",
+      "settings": {}
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "product_hero",
-    "recommended_products"
+    "recommended_products",
+    "flexi_nC8g64"
   ]
 }
