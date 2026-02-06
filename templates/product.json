@@ -11,52 +11,6 @@
   "sections": {
     "product_hero": {
       "type": "product_hero",
-      "blocks": {
-        "product_name_3xzaT4": {
-          "type": "product-name",
-          "name": "Product Name",
-          "settings": {},
-          "blocks": {}
-        },
-        "product_price_4JMBW7": {
-          "type": "product-price",
-          "name": "Product Price",
-          "settings": {},
-          "blocks": {}
-        },
-        "judge_me_reviews_preview_badge_cjHKgF": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
-        "add_to_cart_iPJKQT": {
-          "type": "add-to-cart",
-          "name": "Add to Cart",
-          "settings": {},
-          "blocks": {}
-        },
-        "availability_jJWA8e": {
-          "type": "availability",
-          "name": "Availability",
-          "settings": {},
-          "blocks": {}
-        },
-        "description_tNiJPJ": {
-          "type": "description",
-          "name": "Description",
-          "settings": {
-            "text_heading": "Description"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "product_name_3xzaT4",
-        "product_price_4JMBW7",
-        "judge_me_reviews_preview_badge_cjHKgF",
-        "add_to_cart_iPJKQT",
-        "availability_jJWA8e",
-        "description_tNiJPJ"
-      ],
       "settings": {}
     },
     "recommended_products": {
@@ -64,31 +18,12 @@
       "settings": {
         "text_heading": "Recommended"
       }
-    },
-    "177038595889f8d6b8": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_xqeLJy": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "real_data",
-            "max_width": 1200,
-            "show_shop_reviews": false,
-            "empty_state": "empty_widget"
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_xqeLJy"
-      ],
-      "settings": {}
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "product_hero",
-    "recommended_products",
-    "177038595889f8d6b8"
+    "recommended_products"
   ]
 }
