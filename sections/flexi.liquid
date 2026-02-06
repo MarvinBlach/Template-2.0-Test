@@ -1,0 +1,30 @@
+<div class="padding-global padding-section-small">
+          <div class="container-large">
+            <div li-content-for-theme-blocks="" class="flexible_content">
+{% content_for 'blocks' %}
+</div>
+          </div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Flexi",
+    "class": "section_flex",
+    "blocks": [
+        {
+            "type": "heading"
+        },
+        {
+            "type": "@app"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Flexi",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "heading"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
