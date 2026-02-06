@@ -42,22 +42,31 @@
         "text_heading": "Recommended"
       }
     },
-    "1770387803e93d9bdb": {
-      "type": "apps",
+    "flex_mpafEh": {
+      "type": "flex",
       "blocks": {
-        "judge_me_reviews_review_widget_AN7zc6": {
+        "heading_DbrpJy": {
+          "type": "heading",
+          "settings": {
+            "text_heading": "Heading"
+          },
+          "blocks": {}
+        },
+        "judge_me_reviews_review_widget_GaWbaE": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "real_data",
-            "max_width": 600,
+            "max_width": 850,
             "show_shop_reviews": false,
             "empty_state": "empty_widget"
           }
         }
       },
       "block_order": [
-        "judge_me_reviews_review_widget_AN7zc6"
+        "heading_DbrpJy",
+        "judge_me_reviews_review_widget_GaWbaE"
       ],
+      "name": "Flex",
       "settings": {}
     }
   },
@@ -66,6 +75,6 @@
   "order": [
     "product_hero",
     "recommended_products",
-    "1770387803e93d9bdb"
+    "flex_mpafEh"
   ]
 }
