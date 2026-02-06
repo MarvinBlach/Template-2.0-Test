@@ -1,16 +1,56 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "product_hero": {
-            "type": "product_hero"
+  "sections": {
+    "product_hero": {
+      "type": "product_hero",
+      "blocks": {
+        "add_to_cart_iPJKQT": {
+          "type": "add-to-cart",
+          "name": "Add to Cart",
+          "settings": {},
+          "blocks": {}
         },
-        "recommended_products": {
-            "type": "recommended_products"
+        "availability_jJWA8e": {
+          "type": "availability",
+          "name": "Availability",
+          "settings": {},
+          "blocks": {}
+        },
+        "description_tNiJPJ": {
+          "type": "description",
+          "name": "Description",
+          "settings": {
+            "text_heading": "Description"
+          },
+          "blocks": {}
         }
+      },
+      "block_order": [
+        "add_to_cart_iPJKQT",
+        "availability_jJWA8e",
+        "description_tNiJPJ"
+      ],
+      "settings": {}
     },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "product_hero",
-        "recommended_products"
-    ]
+    "recommended_products": {
+      "type": "recommended_products",
+      "settings": {
+        "text_heading": "Recommended"
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "product_hero",
+    "recommended_products"
+  ]
 }
