@@ -1,8 +1,20 @@
 <div class="padding-global padding-section-small">
           <div class="container-large">
-            <div li-content-for-theme-blocks="" class="flex_content">
-{% content_for 'blocks' %}
-</div>
+            <div class="flexible_content">
+              {% for block in section.blocks %}
+    {% if block.type == "heading" %}
+                    <div li-block="Heading" class="flexible_content-inner">
+                                    
+                
+                                    <h2>
+{{ block.settings.text_heading }}
+</h2>
+                                    
+              
+                            </div>
+            {% endif %}
+{% endfor %}
+            </div>
           </div>
         </div> {% schema %} {
     "tag": "section",
@@ -10,10 +22,16 @@
     "class": "section_flex",
     "blocks": [
         {
-            "type": "heading"
-        },
-        {
-            "type": "@app"
+            "name": "Heading",
+            "type": "heading",
+            "settings": [
+                {
+                    "id": "text_heading",
+                    "type": "text",
+                    "label": "Heading",
+                    "default": "Heading"
+                }
+            ]
         }
     ],
     "presets": [
