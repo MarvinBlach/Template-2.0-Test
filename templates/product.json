@@ -11,6 +11,29 @@
   "sections": {
     "product_hero": {
       "type": "product_hero",
+      "blocks": {
+        "judge_me_reviews_preview_badge_UkyayX": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "vendor_YyP4CC": {
+          "type": "vendor",
+          "name": "Vendor",
+          "settings": {},
+          "blocks": {}
+        },
+        "title_YtHtFY": {
+          "type": "title",
+          "name": "Title",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_preview_badge_UkyayX",
+        "vendor_YyP4CC",
+        "title_YtHtFY"
+      ],
       "settings": {}
     },
     "recommended_products": {
