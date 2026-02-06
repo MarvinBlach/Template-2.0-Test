@@ -12,6 +12,16 @@
     "product_hero": {
       "type": "product_hero",
       "blocks": {
+        "product_price_4JMBW7": {
+          "type": "product-price",
+          "name": "Product Price",
+          "settings": {},
+          "blocks": {}
+        },
+        "judge_me_reviews_preview_badge_cjHKgF": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
         "add_to_cart_iPJKQT": {
           "type": "add-to-cart",
           "name": "Add to Cart",
@@ -34,6 +44,8 @@
         }
       },
       "block_order": [
+        "product_price_4JMBW7",
+        "judge_me_reviews_preview_badge_cjHKgF",
         "add_to_cart_iPJKQT",
         "availability_jJWA8e",
         "description_tNiJPJ"
@@ -45,12 +57,52 @@
       "settings": {
         "text_heading": "Recommended"
       }
+    },
+    "177038595889f8d6b8": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_testimonials_carousel_Pq8tjV": {
+          "type": "shopify://apps/judge-me-reviews/blocks/testimonials_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "show_sample_reviews": true,
+            "reviews_selection": "all",
+            "products": [],
+            "star_rating": "all",
+            "max_reviews": 20,
+            "quote_marks_size": "small",
+            "product_name_text_size": "small",
+            "verified_badge_style": "icon",
+            "card_height": "medium",
+            "text_size": "small",
+            "stars_size": "medium",
+            "arrows_position": "bottom",
+            "max_width": 1100,
+            "corner_styling": "soft",
+            "quote_marks_style": "serif",
+            "card_color": "#F9F9F9",
+            "stars_and_quote_marks_color": "#108474",
+            "text_color": "#000000",
+            "arrows_color": "#000000",
+            "show_border": false,
+            "border_color": "#108474",
+            "show_drop_shadow": false,
+            "transition_speed": 5,
+            "header_text": "Customers are saying",
+            "show_average_rating": true
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_testimonials_carousel_Pq8tjV"
+      ],
+      "settings": {}
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "product_hero",
-    "recommended_products"
+    "recommended_products",
+    "177038595889f8d6b8"
   ]
 }
