@@ -38,6 +38,7 @@
     },
     "recommended_products": {
       "type": "recommended_products",
+      "disabled": true,
       "settings": {
         "text_heading": "Recommended"
       }
