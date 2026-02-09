@@ -92,6 +92,11 @@
         "text_heading_bottom": "25% Extra Discount with Code Extra25",
         "text_disclaimer": "Only for woman clothes"
       }
+    },
+    "flex_Bkm6UB": {
+      "type": "flex",
+      "name": "Animation",
+      "settings": {}
     }
   },
   "layout": "theme",
@@ -103,6 +108,7 @@
     "blog_posts",
     "custom_liquid",
     "tester_i47cUe",
-    "gym_FGqA7m"
+    "gym_FGqA7m",
+    "flex_Bkm6UB"
   ]
 }
