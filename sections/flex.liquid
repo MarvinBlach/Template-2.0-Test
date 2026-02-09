@@ -1,30 +1,68 @@
-<div class="padding-global padding-section-small">
-          <div class="container-large">
-            <div li-content-for-theme-blocks="" class="flexible_content">
-{% content_for 'blocks' %}
-</div>
-          </div>
-        </div> {% schema %} {
+<style>
+  .Header {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .canvas {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: auto;
+    bottom: auto;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    max-width: 100%;
+  }
+  .logo {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+  }
+</style>
+
+<style>
+  * {
+    user-select: none;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+    background-color: #000;
+  } 
+
+  canvas {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .logo{ 
+     pointer-events: none;
+     mix-blend-mode: exclusion;
+     -webkit-mix-blend-mode: exclusion;
+  }
+
+</style>
+
+
+  <div class="canvas">
+    <canvas></canvas>
+  </div>
+  <img class="logo" alt="inherit" src="https://cdn.prod.website-files.com/6989f32699a6f566bbd96b58/6989f32899a6f566bbd96be1_Web-Desire-Logo-wei%C3%9F.svg" loading="lazy"> 
+  <script src="https://uploads-ssl.webflow.com/5d7517ff7288d5a70b3b64bd/613b6a6361dc95d04258d19b_script.txt"></script>
+  
+  {% schema %} {
     "tag": "section",
-    "name": "Flex",
-    "class": "section_flex",
-    "blocks": [
-        {
-            "type": "heading"
-        },
-        {
-            "type": "@app"
-        }
-    ],
+    "name": "Animation",
+    "class": "Header",
     "presets": [
         {
-            "name": "Flex",
+            "name": "Animation",
             "category": "Liquify",
-            "blocks": [
-                {
-                    "type": "heading"
-                }
-            ]
+            "blocks": []
         }
     ]
 } {% endschema %}
